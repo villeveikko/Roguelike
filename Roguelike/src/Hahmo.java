@@ -1,3 +1,4 @@
+import java.awt.event.KeyEvent;
 
 public class Hahmo implements Liikkuminen {
 	protected String nimi;
@@ -116,4 +117,25 @@ public class Hahmo implements Liikkuminen {
 		this.symboli = symboli;
 	}
 
+	public void liiku(KeyEvent e) {
+	    switch (e.getKeyCode()){
+	        case KeyEvent.VK_UP :
+	            // Liikkumismetodi tänne!
+	        	this.setYKoord(getYKoord() + 1);
+	            break;
+	        case KeyEvent.VK_DOWN :
+	            // Liikkumismetodi tänne!
+	        	this.setYKoord(getYKoord() - 1);
+	            break;
+	        case KeyEvent.VK_LEFT :
+	            // Liikkumismetodi tänne!
+	        	this.setXKoord(getXKoord() - 1);
+	            break;
+	        case KeyEvent.VK_RIGHT :
+	            // Liikkumismetodi tänne!
+	        	this.setXKoord(getXKoord() + 1);
+	            break;
+	    }
+	}
+	
 }

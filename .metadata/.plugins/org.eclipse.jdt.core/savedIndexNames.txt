@@ -1,0 +1,2 @@
+INDEX VERSION 1.127+C:\Users\Käyttäjä\Documents\Eclipsehommat\Roguelike\.metadata\.plugins\org.eclipse.jdt.core
+3703987420.index
