@@ -34,6 +34,27 @@ public class Taso {
 	}
 	
 	public void paivitaTaso(){
+		/*
+		 * Ennen kartan uudelleenpäivitystä edellinen täytyy poistaa. 
+		 * Komento on käyttöjärjestelmäkohtainen, joten käytetään try-catch - ominaisuutta avuksi. 
+		 */
+		try
+	    {
+	        final String os = System.getProperty("os.name");
+
+	        if (os.contains("Windows"))
+	        {
+	            Runtime.getRuntime().exec("cls");
+	        }
+	        else
+	        {
+	            Runtime.getRuntime().exec("clear");
+	        }
+	    }
+	    catch (final Exception e)
+	    {
+	        System.out.println("Virhe!");
+	    }
 		kartta.karttaRuudulle();
 	}
 	

@@ -122,18 +122,22 @@ public class Hahmo implements Liikkuminen {
 	        case KeyEvent.VK_UP :
 	            // Liikkumismetodi tänne!
 	        	this.setYKoord(getYKoord() + 1);
+	        	System.out.println("Muutettu!");
 	            break;
 	        case KeyEvent.VK_DOWN :
 	            // Liikkumismetodi tänne!
 	        	this.setYKoord(getYKoord() - 1);
+	        	System.out.println("Muutettu!");
 	            break;
 	        case KeyEvent.VK_LEFT :
 	            // Liikkumismetodi tänne!
 	        	this.setXKoord(getXKoord() - 1);
+	        	System.out.println("Muutettu!");
 	            break;
 	        case KeyEvent.VK_RIGHT :
 	            // Liikkumismetodi tänne!
 	        	this.setXKoord(getXKoord() + 1);
+	        	System.out.println("Muutettu!");
 	            break;
 	    }
 	}

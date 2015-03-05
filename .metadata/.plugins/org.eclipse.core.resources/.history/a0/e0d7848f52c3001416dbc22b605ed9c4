@@ -1,0 +1,47 @@
+import java.io.IOException;
+
+
+public class Testi {
+	public static void main(String[] args){
+		
+		
+		Taso taso = new Taso();
+		try {
+			taso.lueKartta();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	System.out.println("MOI");
+	
+	
+	Sankari s = new Sankari("KILLERMASTER", 100, 30, 10, 2, 6, '@');
+	taso.asetaHahmoKartalle(s.getXKoord(), s.getYKoord(), s);
+	taso.paivitaTaso();
+	// s.liiku(new KeyEvent());		Miten tämä tehdään???
+	
+	/*
+	 * Ennen kartan uudelleenpäivitystä edellinen täytyy poistaa. 
+	 * Komento on käyttöjärjestelmäkohtainen, joten käytetään try-catch - ominaisuutta avuksi. 
+	 */
+	/*try
+    {
+        final String os = System.getProperty("os.name");
+
+        if (os.contains("Windows"))
+        {
+            Runtime.getRuntime().exec("cls");
+        }
+        else
+        {
+            Runtime.getRuntime().exec("clear");
+        }
+    }
+    catch (final Exception e)
+    {
+        System.out.println("Virhe!");
+    }*/
+	taso.paivitaTaso();
+	}
+}
