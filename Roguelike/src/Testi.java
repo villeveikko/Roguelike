@@ -11,7 +11,7 @@ public class Testi {
 			e.printStackTrace();
 		}
 		
-	
+	System.out.println("MOI");
 	
 	
 	Sankari s = new Sankari("KILLERMASTER", 100, 30, 10, 2, 6, '@');
